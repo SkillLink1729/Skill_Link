@@ -7,12 +7,12 @@
 }
 
 body {
-    background-color: #f0f0f0; /* Light gray background to complement the black and white logo */
+    background-color: #fafafa; /* Light background for readability */
     color: #333333; /* Dark text color for readability */
 }
 
 header {
-    background-color: #e0e0e0; /* Light background for contrast with the logo */
+    background-color: #ffebcc; /* Soft peach color for header */
     padding: 20px;
     display: flex;
     align-items: center;
@@ -46,7 +46,7 @@ nav ul li a {
 }
 
 .hero {
-    background-color: #d9d9d9; /* Subtle light gray for variation */
+    background-color: #cce7ff; /* Soft blue for hero section */
     padding: 50px 20px;
     text-align: center;
 }
@@ -59,7 +59,7 @@ nav ul li a {
 
 .services {
     padding: 50px 20px;
-    background-color: #e0e0e0; /* Light gray background */
+    background-color: #d4f1c5; /* Soft green for services section */
     text-align: center;
 }
 
@@ -75,18 +75,19 @@ nav ul li a {
 }
 
 .service-item {
-    background-color: #d9d9d9;
+    background-color: #fce4ec; /* Light pink background for each service item */
     padding: 20px;
     border-radius: 8px;
+    color: #333333;
 }
 
 .team-selection {
-    background-color: #e0e0e0;
+    background-color: #ffebcc; /* Soft peach for team selection */
     padding: 50px 20px;
 }
 
 .team-card {
-    background-color: #d9d9d9;
+    background-color: #e3f2fd; /* Light blue for each team card */
     padding: 20px;
     border-radius: 8px;
     text-align: center;
@@ -98,8 +99,8 @@ nav ul li a {
 }
 
 button {
-    background-color: #333333;
-    color: #f0f0f0;
+    background-color: #333333; /* Dark button color to stand out */
+    color: #ffffff;
     border: none;
     padding: 10px 20px;
     border-radius: 4px;
@@ -108,11 +109,11 @@ button {
 }
 
 button:hover {
-    background-color: #555555;
+    background-color: #555555; /* Slightly lighter on hover */
 }
 
 .contact {
-    background-color: #e0e0e0;
+    background-color: #cce7ff; /* Soft blue for contact section */
     padding: 50px 20px;
     text-align: center;
 }
@@ -120,9 +121,9 @@ button:hover {
 input[type="text"],
 input[type="email"],
 textarea {
-    background-color: #d9d9d9;
+    background-color: #f0f4f8; /* Light off-white for input fields */
     color: #333333;
-    border: 1px solid #bbbbbb;
+    border: 1px solid #cccccc;
     padding: 10px;
     border-radius: 4px;
     width: 100%;
@@ -134,9 +135,9 @@ button[type="submit"] {
 }
 
 footer {
-    background-color: #f0f0f0;
+    background-color: #fafafa;
     text-align: center;
     padding: 10px;
-    color: #555555;
+    color: #777777;
     font-size: 0.9rem;
 }
