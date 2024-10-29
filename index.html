@@ -3,83 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Skill Link</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Select Team</title>
+    <script>
+        function navigateToTeamPage() {
+            const teamSelect = document.getElementById("teamSelect");
+            const selectedTeam = teamSelect.value;
+
+            // Change the URL to the appropriate team page
+            if (selectedTeam) {
+                window.location.href = selectedTeam + ".html"; // Assumes you have team1.html, team2.html, etc.
+            }
+        }
+    </script>
 </head>
 <body>
-    <header>
-        <img src="logo.png" alt="Skill Link Logo" class="logo">
-        <h1>Skill Link</h1>
-        <nav>
-            <ul>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#team-selection">Select Team</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section class="hero">
-        <div class="hero-text">
-            <h2>Hire Pre-Vetted Teams for Your Projects</h2>
-            <p>Get access to complete teams without full-time commitments.</p>
-        </div>
-    </section>
-
-    <section id="services" class="services">
-        <h2>Our Services</h2>
-        <div class="service-list">
-            <div class="service-item">
-                <h3>Development Team</h3>
-                <p>Experienced developers for building your product.</p>
-            </div>
-            <div class="service-item">
-                <h3>Marketing Team</h3>
-                <p>Skilled marketers to boost your brand.</p>
-            </div>
-            <div class="service-item">
-                <h3>Design Team</h3>
-                <p>Creative designers for impactful visuals.</p>
-            </div>
-            <div class="service-item">
-                <h3>Sales Team</h3>
-                <p>Professional salespeople to drive revenue.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="team-selection" class="team-selection">
-        <h2>Select Your Team and Group</h2>
-        <div id="team-buttons">
-            <button onclick="showGroups('development')">Development Team</button>
-            <button onclick="showGroups('marketing')">Marketing Team</button>
-            <button onclick="showGroups('design')">Design Team</button>
-            <button onclick="showGroups('sales')">Sales Team</button>
-        </div>
-
-        <div id="group-buttons" class="group-buttons">
-            <!-- Group buttons will be generated here -->
-        </div>
-
-        <div id="team-members" class="team-members">
-            <!-- Team member details will be displayed here -->
-        </div>
-    </section>
-
-    <section id="contact" class="contact">
-        <h2>Contact Us</h2>
-        <form>
-            <input type="text" placeholder="Your Name">
-            <input type="email" placeholder="Your Email">
-            <textarea placeholder="Message"></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-    </section>
-
-    <footer>
-        <p>&copy; 2024 Skill Link. All rights reserved.</p>
-    </footer>
-
-    <script src="script.js"></script>
+    <h1>Select a Team</h1>
+    <select id="teamSelect" onchange="navigateToTeamPage()">
+        <option value="">--Select a Team--</option>
+        <option value="team1">Team 1</option>
+        <option value="team2">Team 2</option>
+        <option value="team3">Team 3</option>
+    </select>
 </body>
 </html>
