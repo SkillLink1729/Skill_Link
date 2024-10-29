@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team 1</title>
+    <script>
+        const teamDetails = {
+            age: 5, // Team 1 age in years
+            experience: '3 years of experience in software development.'
+        };
+
+        window.onload = function() {
+            document.getElementById("teamAge").innerText = `Age: ${teamDetails.age} years`;
+            document.getElementById("teamExperience").innerText = `Experience: ${teamDetails.experience}`;
+        };
+    </script>
+</head>
+<body>
+    <h1>Team 1</h1>
+    <p id="teamAge"></p>
+    <p id="teamExperience"></p>
+    <a href="index.html">Back to Team Selection</a>
+</body>
+</html>
