@@ -49,11 +49,17 @@
     </section>
 
     <section id="team-selection" class="team-selection">
-        <h2>Select Your Team</h2>
-        <button onclick="showTeam('development')">Development Team</button>
-        <button onclick="showTeam('marketing')">Marketing Team</button>
-        <button onclick="showTeam('design')">Design Team</button>
-        <button onclick="showTeam('sales')">Sales Team</button>
+        <h2>Select Your Team and Group</h2>
+        <div id="team-buttons">
+            <button onclick="showGroups('development')">Development Team</button>
+            <button onclick="showGroups('marketing')">Marketing Team</button>
+            <button onclick="showGroups('design')">Design Team</button>
+            <button onclick="showGroups('sales')">Sales Team</button>
+        </div>
+
+        <div id="group-buttons" class="group-buttons">
+            <!-- Group buttons will be generated here -->
+        </div>
 
         <div id="team-members" class="team-members">
             <!-- Team member details will be displayed here -->
